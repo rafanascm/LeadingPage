@@ -56,19 +56,39 @@ export const LandingPage = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center space-x-2">
-              <div className="h-8 w-8 rounded-full bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">R</span>
-              </div>
-              <span className="font-bold text-xl" style={{color: '#031C26'}}>Rafaela Nascimento</span>
+         <span>
+          <img src="/rubrica.svg" className="w-52 h-52" alt="" />
+       </span>
             </div>
-            <nav className="hidden md:flex items-center space-x-8">
-              <a href="#sobre" className="text-gray-600 hover:text-blue-600 transition-colors">Sobre</a>
-              <a href="#servicos" className="text-gray-600 hover:text-blue-600 transition-colors">Serviços</a>
-              <a href="#depoimentos" className="text-gray-600 hover:text-blue-600 transition-colors">Depoimentos</a>
-              <Button onClick={handleWhatsAppClick} className="bg-green-600 hover:bg-green-700">
-                <MessageCircle className="mr-2 h-4 w-4" />
-                WhatsApp
-              </Button>
+            <nav className="hidden md:flex items-center space-x-4">
+              <a
+                href="#inicio"
+                className="transition-colors px-4 py-2 text-[#403232] rounded-[10px] h-3 w-3 flex items-center justify-center hover:text-[#F8F8F8] hover:bg-[#403232]"
+                style={{ minWidth: '90px', minHeight: '38px' }}
+              >
+                Inicio
+              </a>
+              <a
+                href="#sobre"
+                className="transition-colors px-4 py-2 text-[#403232] rounded-[10px] h-3 w-3 flex items-center justify-center hover:text-[#F8F8F8] hover:bg-[#403232]"
+                style={{ minWidth: '90px', minHeight: '38px' }}
+              >
+                Sobre
+              </a>
+              <a
+                href="#aulas"
+                className="transition-colors px-4 py-2 text-[#403232] rounded-[10px] h-3 w-3 flex items-center justify-center hover:text-[#F8F8F8] hover:bg-[#403232]"
+                style={{ minWidth: '90px', minHeight: '38px' }}
+              >
+                Aulas
+              </a>
+              <a
+                href="#depoimentos"
+                className="transition-colors px-4 py-2 text-[#403232] rounded-[10px] h-3 w-3 flex items-center justify-center hover:text-[#F8F8F8] hover:bg-[#403232]"
+                style={{ minWidth: '140px', minHeight: '38px' }}
+              >
+                Depoimentos
+              </a>
             </nav>
           </div>
         </div>
@@ -80,63 +100,40 @@ export const LandingPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <Badge variant="secondary" className="text-sm font-medium" style={{backgroundColor: '#94B8D8', color: '#031C26'}}>
-                  {mockData.tutor.slogan}
-                </Badge>
-                <h1 className="text-4xl lg:text-6xl font-bold leading-tight" style={{color: '#031C26'}}>
-                  Aprenda tech de verdade com quem vive o
-                  <span className="bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent flex items-center gap-4">
-                    mercado
-                    <img 
-                      src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=100&h=60&fit=crop" 
-                      alt="Tech workspace" 
-                      className="rounded-lg shadow-md"
-                    />
-                  </span>
+                <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-8 text-secondary" >
+                  Seu futuro no mercado de TI começa pelo seu aprendizado de hoje.
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
-                  Aulas particulares e mentoria focadas no que realmente importa: 
-                  <strong> sua evolução profissional em tecnologia</strong>
-                </p>
-              </div>
-              
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  size="lg" 
-                  onClick={handleVideoClick}
-                  className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105"
-                >
-                  <Sparkles className="mr-2 h-5 w-5" />
-                  Conheça-me
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  onClick={handleScheduleClick}
-                  className="border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold px-8 py-3 rounded-lg transition-all duration-300"
-                >
-                  <Calendar className="mr-2 h-5 w-5" />
-                  Agendar Horário
-                </Button>
-              </div>
-
-              <div className="flex items-center justify-center pt-6">
-                <div className="px-6 py-3 rounded-full" style={{backgroundColor: '#F2E9E4'}}>
-                  <span className="text-2xl font-bold" style={{color: '#031C26'}}>
-                    {mockData.tutor.slogan}
-                  </span>
+                <div className="space-y-2">
+                  <p className="text-xl text-gray-default leading-relaxed ">
+                    Aulas particulares e mentoria focadas no que realmente importa:
+                  </p>
+                  <p className="text-xl text-secondary leading-relaxed font-bold">
+                    sua evolução profissional em tecnologia
+                  </p>
+                </div>
+                <div className="mt-6">
+                  <button
+                    className="px-8 py-3 rounded-lg text-black font-semibold text-lg shadow-lg transition-all duration-300 mt-6"
+                    style={{
+                      background: 'linear-gradient(90deg, #FFBF00 0%, #F2A50C 100%)',
+                      border: 'none',
+                      outline: 'none',
+                    }}
+                  >
+                    Agendar aula experimental
+                  </button>
                 </div>
               </div>
-            </div>
+              
+            
 
+              <div className="flex items-center justify-center pt-6">
+              </div>
+            </div>
             <div className="relative lg:pl-8">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-blue-200 rounded-3xl transform rotate-3"></div>
-                <img 
-                  src={mockData.tutor.image}
-                  alt="Rafaela Nascimento"
-                  className="relative z-10 w-full max-w-md mx-auto rounded-3xl shadow-2xl"
-                />
+              <div className="relative flex justify-center items-center h-full">
+                <img src="/sectionone.svg" alt="" />
+                
               </div>
             </div>
           </div>

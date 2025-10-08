@@ -24,6 +24,8 @@ import {
   Sparkles
 } from 'lucide-react';
 import { mockData } from '../data/mock';
+import { motion } from 'framer-motion';
+import { FloatingIcons3D } from './FloatingIcons';
 
 const iconMap = {
   Code, Palette, Users, Heart, BookOpen, TrendingUp, 
@@ -95,50 +97,52 @@ export const LandingPage = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 lg:py-32">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-8 text-secondary" >
-                  Seu futuro no mercado de TI começa pelo seu aprendizado de hoje.
-                </h1>
-                <div className="space-y-2">
-                  <p className="text-xl text-gray-default leading-relaxed ">
-                    Aulas particulares e mentoria focadas no que realmente importa:
-                  </p>
-                  <p className="text-xl text-secondary leading-relaxed font-bold">
-                    sua evolução profissional em tecnologia
-                  </p>
-                </div>
-                <div className="mt-6">
-                  <button
-                    className="px-8 py-3 rounded-lg text-black font-semibold text-lg shadow-lg transition-all duration-300 mt-6"
-                    style={{
-                      background: 'linear-gradient(90deg, #FFBF00 0%, #F2A50C 100%)',
-                      border: 'none',
-                      outline: 'none',
-                    }}
-                  >
-                    Agendar aula experimental
-                  </button>
-                </div>
-              </div>
-              
-            
-
-              <div className="flex items-center justify-center pt-6">
-              </div>
-            </div>
-            <div className="relative lg:pl-8">
-              <div className="relative flex justify-center items-center h-full">
-                <img src="/sectionone.svg" alt="" />
-                
-              </div>
-            </div>
+     {/* Hero Section */}
+<section className="relative overflow-hidden py-20 lg:py-32">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl w-full">
+      <div className="space-y-8">
+        <div className="space-y-4">
+          <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-8 text-secondary">
+            Seu futuro no mercado de TI começa pelo seu aprendizado de hoje.
+          </h1>
+          <div className="space-y-2"> {/* REMOVI as classes de centralização */}
+            <p className="text-xl text-gray-default leading-relaxed">
+              Aulas particulares e mentoria focadas no que realmente importa:
+            </p>
+            <p className="text-xl text-secondary leading-relaxed font-bold">
+              sua evolução profissional em tecnologia
+            </p>
+          </div>
+          <div className="mt-6">
+            <button
+              className="px-8 py-3 rounded-lg text-black font-semibold text-lg shadow-lg transition-all duration-300 mt-6"
+              style={{
+                background: 'linear-gradient(90deg, #FFBF00 0%, #F2A50C 100%)',
+                border: 'none',
+                outline: 'none',
+              }}
+            >
+              Agendar aula experimental
+            </button>
           </div>
         </div>
-      </section>
+        
+        <div className="flex items-center justify-center pt-6">
+        </div>
+      </div>
+      <div className="relative lg:pl-8">
+        <div className="relative flex justify-center items-center h-full">
+          <img src="/womansection1.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      {/* Section Menina Perdida */}
+
+      <FloatingIcons3D/>
 
       {/* Target Audience */}
       <section className="py-16 bg-gray-50">

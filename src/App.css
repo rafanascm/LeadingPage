@@ -1,7 +1,13 @@
 /* Custom styles for Rafaela's Landing Page */
 .App {
   min-height: 100vh;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-family:
+    'Inter',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    sans-serif;
 }
 
 /* Remove default text centering */
@@ -61,7 +67,9 @@ html {
 
 /* Custom hover effects for buttons */
 .hover-lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .hover-lift:hover {
@@ -81,16 +89,16 @@ html {
 
 /* Custom gradient backgrounds */
 .gradient-primary {
-  background: linear-gradient(135deg, #365B76 0%, #94B8D8 100%);
+  background: linear-gradient(135deg, #365b76 0%, #94b8d8 100%);
 }
 
 .gradient-secondary {
-  background: linear-gradient(135deg, #A6896F 0%, #F2E9E4 100%);
+  background: linear-gradient(135deg, #a6896f 0%, #f2e9e4 100%);
 }
 
 /* Text gradient */
 .text-gradient {
-  background: linear-gradient(135deg, #365B76, #94B8D8);
+  background: linear-gradient(135deg, #365b76, #94b8d8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -106,11 +114,11 @@ html {
   h1 {
     font-size: 2.5rem !important;
   }
-  
+
   h2 {
     font-size: 2rem !important;
   }
-  
+
   .section-padding {
     padding: 3rem 0;
   }
@@ -118,26 +126,26 @@ html {
 
 /* Custom button styles */
 .btn-primary {
-  background-color: #365B76;
-  border-color: #365B76;
+  background-color: #365b76;
+  border-color: #365b76;
   transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #031C26;
-  border-color: #031C26;
+  background-color: #031c26;
+  border-color: #031c26;
   transform: translateY(-1px);
 }
 
 .btn-whatsapp {
-  background-color: #25D366;
-  border-color: #25D366;
+  background-color: #25d366;
+  border-color: #25d366;
   transition: all 0.3s ease;
 }
 
 .btn-whatsapp:hover {
-  background-color: #128C7E;
-  border-color: #128C7E;
+  background-color: #128c7e;
+  border-color: #128c7e;
   transform: translateY(-1px);
 }
 
@@ -147,11 +155,12 @@ html {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 
@@ -165,23 +174,26 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #365B76;
+  background: #365b76;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #031C26;
+  background: #031c26;
 }
 
 /* Focus states for accessibility */
 button:focus-visible,
 a:focus-visible {
-  outline: 2px solid #365B76;
+  outline: 2px solid #365b76;
   outline-offset: 2px;
 }
 
 /* Smooth transitions for all interactive elements */
-button, a, .card, .badge {
+button,
+a,
+.card,
+.badge {
   transition: all 0.3s ease;
 }
 
@@ -192,8 +204,8 @@ button {
 
 /* Custom badge styles */
 .badge-custom {
-  background-color: #94B8D8;
-  color: #031C26;
+  background-color: #94b8d8;
+  color: #031c26;
   font-weight: 500;
 }
 
